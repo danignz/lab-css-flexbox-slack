@@ -54,10 +54,6 @@ nav ul li {
   color: #5b5e6d;
 }
 
-/* nav > ul > li {
-  color: #5b5e6d;
-} */
-
 ul {
   list-style: none;
 }
@@ -193,11 +189,11 @@ hr{
 #h2style{
   font-size: 1.7rem;
   font-weight: bold;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .fstyle{
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: bold;
   padding-top: 10px;
   color: grey;
@@ -280,11 +276,14 @@ footer > img {
   padding: 12px;
 }
 
+
 /* Break Points */
 
-/* XXXX Device */
-@media (min-width: 1000px){
-    h6{
-        color: pink; /* //borraaaaa*/
+/* Iteration 2 | Small Screen (961px > width > 767px) */
+/* Media query will be invoked when resolutions is smaller than 962px and bigger than 766*/
+
+@media (min-width: 767px) and (max-width: 961px) {
+    body{
+        background-color: pink;
     }
 }
