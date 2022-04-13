@@ -1,7 +1,97 @@
+/* Mobile First Styles */
+/* Iteration 1 | Extra Small Screen (width < 768px) */
+
+body {
+    font-family: 'Font Awesome\ 5 Brands';
+    /*font-family: sans-serif, Arial, Verdana;*/
+    font-weight: 400;
+    font-size: 16px; 
+}
+
 /*
 background-grey: #F4F3F4;
 button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
+
 */
+
+h1, h2{
+  color: #2C303F; 
+}
+
+p{
+  color: #5b5e6d;
+}
+
+/* Font settings */
+ 
+/* h1 {
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1rem;
+  }
+   */
+
+
+/* NavTop Styles */
+
+nav {
+  border-bottom: 1px solid #5b5e6d;
+  border-top: 1px solid #5b5e6d;
+}
+
+.flex {
+    display: flex;
+    width: 95vw;
+    align-items: center;
+    justify-content: center;
+}   
+
+nav > img {
+    height: 50px;
+    margin-left: 30px;
+    padding: 10px 0;
+}
+
+ul li {
+  display: inline-block;
+  font-size: 10px; 
+  /* Hidden element to improve better positions of it's siblings */
+  visibility: hidden;
+}
+
+nav > ul > li {
+  color: #5b5e6d;
+}
+
+ul {
+  list-style: none;
+}
+
+.fa-solid {
+    color: #2C303F; 
+    font-size: 30px;
+    margin-right: 30px;
+ /*   display: none;*/
+}
+
+
+
+/* Break Points */
+
+/* XXXX Device */
+@media (min-width: 1000px){
+    h6{
+        color: pink; /* //borraaaaa*/
+    }
+}

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- Add script to use Awesome Font resources -->
+    <script src="https://kit.fontawesome.com/d96fe1c14f.js" crossorigin="anonymous"></script>
+
     <!-- link the font awesome CDN -->
     <link
       href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
@@ -14,20 +17,22 @@
     <!-- link your styles -->
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <title>Where work happens | Slack</title>
+   
   </head>
 
   <body>
-    <nav>
-      <img src="./images/slack-logo.png" alt="slack_logo" />
-      <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
-      </ul>
-    </nav>
+      <nav class="flex">
+        <img src="./images/slack-logo.png" alt="slack_logo" />
+        <ul class="flex">
+          <li>Why Slack?</li>
+          <li>Pricing</li>
+          <li>About Us</li>
+          <li>Your Workspaces</li>
+        </ul>
+        <!--Burguer Menu Icon Font Awesome-->
+        <i class="fa-solid fa-bars"></i>
+      </nav>
     <header>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
       <p>
         When your team needs to kick off a project, hire a new employee, deploy
@@ -37,6 +42,7 @@
       </p>
       <button type="button" name="button">GET STARTED</button>
       <p>Already using Slack? <a href="#">Sign in</a></p>
+      <img src="./images/home_talking.png" alt="home_work_happening" />
     </header>
     <main>
       <div>
