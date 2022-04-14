@@ -14,7 +14,7 @@ h1 {
 }
   
 h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
     
 p {
@@ -35,7 +35,7 @@ nav {
 
 .flex-container {
     display: flex;
-    width: 95vw;
+    width: 100vw;
     align-items: center;
     justify-content: center;
 } 
@@ -71,7 +71,7 @@ ul {
 .flex-container-col {
   display: flex;
   flex-direction: column;
-  width: 95vw;
+  width: 100vw;
   align-items: center;
   justify-content: center;
 } 
@@ -81,7 +81,7 @@ header > h1{
 }
 
 header > img{
-  width: 80vw;
+  width: 90vw;
   padding-top: 40px;
 }
 
@@ -110,9 +110,8 @@ p{
 
 input,
 input::-webkit-input-placeholder {
-    font-size: 10px;
-    line-height: 2;
-    font-size: 1.2rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
     text-align: left;
 }
 
@@ -140,7 +139,7 @@ h2{
 }
 
 main{
-  width: 95vw;
+  width: 100vw;
 }
 
 main > div > img{
@@ -152,9 +151,12 @@ main > div:first-child{
 background-color: #F4F3F4;
 }
 
-main > div > img{
-  height: 50px;
-  padding: 40px;
+main > div:first-child > img:last-child{
+  margin-bottom: 40px;
+}
+
+main > div > img:last-child{
+  background-color: #F4F3F4;
 }
 
 .img-smallaer{
@@ -202,9 +204,9 @@ hr{
 .flex-container-col3 {
   display: flex;
   flex-direction: column;
-  width: 95vw;
+  width: 100vw;
   align-items: center;
-  align-content: center;
+  justify-content:center;
 } 
 
 /* Footer Styles */
@@ -212,7 +214,9 @@ hr{
 .flex-containerr2 {
   display: flex;
   flex-wrap: wrap;
-  width: 95vw;
+  width: 100vw;
+  color: grey;
+  font-size: 1.1rem;
 } 
 
 .flex-containerr2 > ul {
@@ -227,23 +231,25 @@ footer .flex-container4{
   background-color: #F4F3F4;
 }
 
-.flex-containec4{
-  display: flex;
+.flex-container4{
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  width: 95vw;
+  flex-wrap: wrap; */
+  width: 100vw;
 }
 
 .flex-container4 > ul{
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px; 
 }
 
 .flex-container4 > ul li {
   font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: bolder;
   color: grey;
-  padding: 0 10px;
+  padding: 5px 5px;
 }
 
 #flatresize{
@@ -258,6 +264,7 @@ footer .flex-container4{
   padding: 15px;
   color: grey;
   font-size: 1.1rem;
+  font-weight: bolder;
  } 
 
 .flex-container5 {
@@ -274,6 +281,8 @@ footer > img {
 
 .fab{
   padding: 12px;
+  margin-bottom: 30px;
+  color: #5b5e6d;
 }
 
 
