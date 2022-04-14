@@ -10,7 +10,7 @@ body {
 /* Font settings */
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
 }
   
 h2 {
@@ -295,4 +295,22 @@ footer > img {
     body{
         background-color: pink;
     }
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    #email{
+      width: 40vw;
+    }
+
+    button.buttonstyle{
+      width: 25vw;
+    }
+
+    header > img{
+      width: 50vw;
+      padding-top: 40px;
+    }
 }
+
