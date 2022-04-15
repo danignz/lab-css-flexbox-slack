@@ -10,7 +10,7 @@ body {
 /* Font settings */
 
 h1 {
-  font-size: 2.9rem;
+  font-size: 2.7rem;
 }
   
 h2 {
@@ -18,7 +18,7 @@ h2 {
 }
     
 p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 
@@ -74,38 +74,53 @@ ul {
   width: 100vw;
   align-items: center;
   justify-content: center;
-} 
+  line-height:1;
+}
+
+.flex-container-sub{
+  display: flex;
+  flex-direction: column;
+}
 
 header > h1{
-  width: 80vw;
+  width: 65%;
+  margin-right: 15%;
 }
 
 header > img{
-  width: 90vw;
+  width: 80vw;
   padding-top: 40px;
 }
 
-p{
+#fistHeaderPara{
+  margin-top: 0;
+  margin-bottom: 30px;
   width: 80vw;
 }
 
-/* header > button{ */
-.buttonstyle{  
+/* header > button | GET STARTED{ */
+.buttonstyle{ 
   width: 80vw;
   background-color: #192592;
   color: white;
   padding: 20px 30px;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 5px;
   margin-top: 10px;
 }
 
-#email{
+.buttonstyle2{ 
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.email{
   width: 79vw;
-  padding-top: 15px;
+  padding-top: 20px;
   padding-bottom: 15px;
-  margin: 20px 0 15px 0;
+  margin: 10px 0 10px 0;
+  border: rgb(160, 160, 160) solid 1px;
 }
 
 input,
@@ -116,6 +131,7 @@ input::-webkit-input-placeholder {
 }
 
 #p-link{
+  margin-top: 1rem;
   text-align: center;
   font-size: 1.4rem;
 }
@@ -142,43 +158,67 @@ main{
   width: 100vw;
 }
 
-main > div > img{
-  height: 50px;
-  padding: 40px;
+.flex-container-sub2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items:stretch;
+}
+
+main > div  div {
+  width: 100vw;
+} 
+
+.img-resize{
+  height: 13vh;
+  padding: 4vh 30vw;
+  border-bottom: 1px solid rgb(160, 160, 160);
+  box-sizing: border-box;
+}
+
+.img-resize4{
+  padding: 4vh 15vw;
+}
+
+.img-resize5{
+  padding: 5vh 32vw;
+}
+
+.img-resize6{
+  padding: 5vh 20vw;
+}
+
+main > div > p{
+  margin-top: 1px;
+  width: 80vw;
 }
 
 main > div:first-child{
-background-color: #F4F3F4;
-}
-
-main > div:first-child > img:last-child{
-  margin-bottom: 40px;
-}
-
-main > div > img:last-child{
   background-color: #F4F3F4;
 }
 
-.img-smaller{
-  height: 30px;
-}
-
-main > div > button{
-  width: 80vw;
+/* main > button | DISCOVER WHY STARTED{ */
+.buttonStyleMain{ 
   background-color: white;
   color: #192592;
-  padding: 20px 30px;
   border: 1px solid #192592;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  margin: 20px;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 
 main > div > p{
   text-align: center;
   margin-top: 0px;
+
 }
+
+main > div > div p{
+  text-align: center;
+  margin-top: 0px;
+}
+
 
 hr{
   margin: 20px auto 30px auto;
@@ -191,17 +231,28 @@ hr{
 #h2style{
   font-size: 1.7rem;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 60px;
+  line-height: 0;
 }
 
 .fstyle{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   padding-top: 10px;
   color: grey;
 }
 
-.flex-container-col3 {
+.flex-container-col2{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  line-height:1;
+}
+
+.flex-container-col3,
+.flex-container-sub3{
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -217,7 +268,7 @@ hr{
   width: 100vw;
   color: grey;
   font-size: 1.1rem;
-} 
+}
 
 .flex-containerr2 > ul {
   width: 30%;
@@ -232,17 +283,17 @@ footer .flex-container4{
 }
 
 .flex-container4{
-  /* display: flex;
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap; */
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
 }
 
 .flex-container4 > ul{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 50px; 
 }
 
 .flex-container4 > ul li {
@@ -250,6 +301,7 @@ footer .flex-container4{
   font-weight: bolder;
   color: grey;
   padding: 5px 5px;
+  margin-right: 15px;
 }
 
 #flatresize{
@@ -274,9 +326,9 @@ footer .flex-container4{
   justify-content: center;
 }
 
-footer > img {
-  height: 110px;
-  margin-left: 10px;
+footer > div > img {
+  height: 140px;
+  margin-right: 600px;
 }
 
 .fab{
@@ -292,25 +344,166 @@ footer > img {
 /* Media query will be invoked when resolutions is smaller than 962px and bigger than 766*/
 
 @media (min-width: 767px) and (max-width: 961px) {
-    body{
-        background-color: pink;
+
+   
+    .flex-container-col{
+      width: 100%;
+      align-items: stretch;
+      flex-wrap: wrap;
     }
 
-    h1 {
-      font-size: 4rem;
+    header > h1{
+      width: 90%;
+      font-size: 4.7rem;
+      align-self: left;
+      margin-left: 50px;
     }
 
-    #email{
+    .email{
+      margin-left: 50px;
       width: 40vw;
+      padding: 20px 10px;
+      border: rgb(160, 160, 160) solid 1px;
     }
 
-    button.buttonstyle{
+    #fistHeaderPara{
+      margin-left: 50px;
+      font-size: 1.5rem;
+      width: 90%;
+    }
+
+    #p-link{
+      margin-left: 50px;
+      text-align: left;
+    }
+
+    button.buttonstyle {
+      margin-left: 10px;
       width: 25vw;
+      display: inline-block;
+      padding: 25px 40px;
     }
 
     header > img{
       width: 50vw;
-      padding-top: 40px;
+      align-self: center;
     }
+    
+    .flex-container-sub{
+      display: flex;
+      flex-direction: row;
+      justify-items:flex-start;
+      align-items: baseline;
+    }
+
+    .flex-container-sub2{
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+      align-items: stretch;
+      box-sizing: border-box;
+    }
+
+    .flex-container-sub2 img{
+      width: 50vw;
+      border-bottom: 1px solid rgb(160, 160, 160);
+      height: 15vh;
+      box-sizing: border-box;
+    }
+       
+     .img-resize{
+      height: 15vh;
+      border-bottom: 1px solid rgb(160, 160, 160);
+      box-sizing: border-box;
+    }
+
+    .img-resize1{
+      padding: 5vh 15vw;
+      border-right: 1px solid rgb(160, 160, 160);
+    }
+    
+    .img-resize2{
+      padding: 5vh 15vw;
+      border-right: none;
+    }
+    
+    .img-resize3{
+      padding: 5vh 15vw;
+      border-right: 1px solid rgb(160, 160, 160);
+    }
+    .img-resize4{
+      padding: 5vh 7vw;
+      border-right: none;
+    }
+    
+    .img-resize5{
+      padding: 6vh 15vw;
+      border-right: 1px solid rgb(160, 160, 160);
+    }
+    
+    .img-resize6{
+      padding: 6vh 10vw;
+      border-right: none;
+    } 
+
+    .flex-container-col3 {
+      display: flex;
+      flex-direction: row;
+      width: 100vw;
+      justify-content:center;
+      align-items: baseline;
+    } 
+
+    .flex-container-sub3{
+      width: 38vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    } 
+        
+    .email2{
+      width: 25vw;
+    } 
+
+    .flex-containerr2 {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100vw;
+      color: grey;
+      font-size: 1.1rem;
+      align-items:flex-start;
+      align-content:flex-start;
+      justify-content: space-evenly;
+    }
+    
+    .flex-containerr2 > ul {
+      width: 12%;
+    }
+
+    footer > div > img {
+      margin: 0px; 
+    }
+
+    .flex-container4{
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+
+    }
+
+    .flex-container4 > ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer > div > div > img {
+      margin-right: 5vw;
+    }
+    
 }
 
