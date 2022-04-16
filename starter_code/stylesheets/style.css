@@ -20,7 +20,6 @@ p {
   font-size: 1.2rem;
 }
 
-
 /* NavTop Styles */
 nav {
   border-bottom: 1px solid #5b5e6d;
@@ -86,12 +85,12 @@ ul {
   flex-direction: column;
 }
 
-header > h1{
+header > div > h1{
   width: 65%;
   margin-right: 15%;
 }
 
-header > img{
+header > div > img{
   width: 80vw;
   padding-top: 40px;
 }
@@ -345,7 +344,6 @@ footer > div > img {
   flex-direction: column;
 }
 
-
 /* Break Points */
 /* Iteration 2 | Small Screen (961px > width > 767px) */
 /* Media query will be invoked when resolutions is smaller than 962px and bigger than 766*/
@@ -353,12 +351,12 @@ footer > div > img {
  @media screen and (min-width: 768px) { 
  
     .flex-container-col{
-      width: 100%;
-      align-items: stretch;
       flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
     }
 
-    header > h1{
+    header > div > h1{
       width: 90%;
       font-size: 4.7rem;
       align-self: left;
@@ -385,12 +383,12 @@ footer > div > img {
 
     button.buttonstyle{
       margin-left: 10px;
-      width: 25vw;
+      width: 220px;
       display: inline-block;
       padding: 25px 40px;
     }
 
-    header > img{
+    header > div > img{
       width: 50vw;
       align-self: center;
     }
@@ -462,6 +460,8 @@ footer > div > img {
       width: 100vw;
       justify-content:center;
       align-items: baseline;
+      padding: 0 30px;
+      box-sizing: border-box;
     } 
 
     .flex-container-sub3{
@@ -506,7 +506,6 @@ footer > div > img {
       flex-direction: row;
       align-items: stretch;
     }
-        
 }
 
 /* Iteration 3 | Medium Screen (1024px > width > 960px) */
@@ -551,6 +550,24 @@ footer > div > img {
 /* Iteration 4 | Largue Screen */
 @media screen and (min-width: 1201px){
 
+  .flex-container-col{
+    flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-evenly;
+  }
+
+  header > div > img{
+    width: 50vw;
+    padding: 7vw;
+    box-sizing: border-box;
+  }
+
+  header > div:first-child{
+    width: 50vw;
+    padding: 3vw;
+    box-sizing: border-box;
+  }
+
   nav ul {
     align-self: right;
     display: inline-block;
@@ -574,9 +591,21 @@ footer > div > img {
     justify-content: center;
   } 
 
-  header > img{
-    width: 50vw;
-    padding-top: 40px;
+  header > div > h1{
+    font-size: 5rem;
   }
 
+  header > div > div > .buttonstyle{
+    margin-left: 50px;
+  }
+
+  input{
+    display: none;
+  }
+
+  .flex-container-col3{
+    justify-content:space-between;
+    box-sizing: border-box;
+    padding: 0 50px;
+  }
 }
