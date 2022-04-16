@@ -8,7 +8,6 @@ body {
 }
 
 /* Font settings */
-
 h1 {
   font-size: 2.7rem;
 }
@@ -23,7 +22,6 @@ p {
 
 
 /* NavTop Styles */
-
 nav {
   border-bottom: 1px solid #5b5e6d;
   border-top: 1px solid #5b5e6d;
@@ -74,7 +72,6 @@ ul {
 
 
 /* Header Styles */
-
 .flex-container-col {
   display: flex;
   flex-direction: column;
@@ -105,7 +102,7 @@ header > img{
   width: 80vw;
 }
 
-/* header > button | GET STARTED{ */
+/* header > button | GET STARTED */
 .buttonstyle{ 
   width: 80vw;
   background-color: #192592;
@@ -155,7 +152,6 @@ p{
 }
 
 /* Main Styles */
-
 h2{
   color: #2C303F; 
   margin-top: 50px;
@@ -226,7 +222,6 @@ main > div > div p{
   margin-top: 0px;
 }
 
-
 hr{
   margin: 20px auto 30px auto;
   width: 100%;
@@ -268,7 +263,6 @@ hr{
 } 
 
 /* Footer Styles */
-
 .flex-containerr2 {
   display: flex;
   flex-wrap: wrap;
@@ -294,12 +288,14 @@ footer .flex-container4{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .flex-container4 > ul{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  align-content: space-around;
 }
 
 .flex-container4 > ul li {
@@ -316,21 +312,22 @@ footer .flex-container4{
 
 #foot-iconds{
   text-align: center;
-  width: 150px;
+  padding: 15px 20px;
 }
 
 .flex-container5 > span{
-  padding: 15px;
+  padding: 10px;
   color: grey;
   font-size: 1.1rem;
   font-weight: bolder;
- } 
+} 
 
 .flex-container5 {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  padding: 5px 20px;
 }
 
 footer > div > img {
@@ -339,14 +336,17 @@ footer > div > img {
 }
 
 .fab{
-  padding: 12px;
-  margin-bottom: 30px;
+  padding: 8px;
   color: #5b5e6d;
+}
+
+.flex-container6{
+  display: flex;
+  flex-direction: column;
 }
 
 
 /* Break Points */
-
 /* Iteration 2 | Small Screen (961px > width > 767px) */
 /* Media query will be invoked when resolutions is smaller than 962px and bigger than 766*/
 
@@ -383,7 +383,7 @@ footer > div > img {
       text-align: left;
     }
 
-    button.buttonstyle {
+    button.buttonstyle{
       margin-left: 10px;
       width: 25vw;
       display: inline-block;
@@ -421,7 +421,7 @@ footer > div > img {
       box-sizing: border-box;
     }
        
-     .img-resize{
+    .img-resize{
       height: 15vh;
       border-bottom: 1px solid rgb(160, 160, 160);
       box-sizing: border-box;
@@ -502,27 +502,15 @@ footer > div > img {
       justify-content: space-between;
     }
 
-    .flex-container5 {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      justify-content: center;
-      width: 15vw;
+    .flex-container6{
+      flex-direction: row;
+      align-items: stretch;
     }
-
-    #flatresize{
-      margin-left: 10vw;
-    }
-
-    footer > div > div > img {
-      margin-right: 5vw;
-    }
-    
+        
 }
 
 /* Iteration 3 | Medium Screen (1024px > width > 960px) */
 /* Media query will be invoked when resolutions is smaller than 962px and bigger than 766*/
-
 @media screen and (min-width: 961px){
   
   .flex-container-sub2 img{
@@ -592,6 +580,3 @@ footer > div > img {
   }
 
 }
-
-
-
