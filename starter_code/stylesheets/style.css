@@ -80,6 +80,10 @@ ul {
   line-height:1;
 }
 
+header > div:first-child {
+  margin-left: 3vw;
+}
+
 .flex-container-sub{
   display: flex;
   flex-direction: column;
@@ -169,7 +173,7 @@ main{
   align-items:stretch;
 }
 
-main > div  div {
+main > div div {
   width: 100vw;
 } 
 
@@ -527,6 +531,7 @@ footer > div > img {
   
   .img-resize3{
     padding: 5vh 10vw;
+    border-right: none;
   }
   .img-resize4{
     padding: 5vh 4vw;
@@ -561,7 +566,7 @@ footer > div > img {
   }
 
   header > div:first-child{
-    width: 50vw;
+    width: 47vw;
     padding: 3vw;
     box-sizing: border-box;
   }
@@ -606,4 +611,13 @@ footer > div > img {
     box-sizing: border-box;
     padding: 0 50px;
   }
+
+  .fa-solid {
+    visibility: hidden;
+  }
+
+  footer > div > img {
+    margin-right: 20vw;
+  }
+
 }
