@@ -201,7 +201,7 @@ main > div:first-child{
   background-color: #F4F3F4;
 }
 
-/* main > button | DISCOVER WHY STARTED{ */
+/* main > button | DISCOVER WHY STARTED */
 .buttonStyleMain{ 
   background-color: white;
   color: #192592;
@@ -262,7 +262,7 @@ hr{
 } 
 
 /* Footer Styles */
-.flex-containerr2 {
+.flex-container2 {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
@@ -270,7 +270,7 @@ hr{
   font-size: 1.1rem;
 }
 
-.flex-containerr2 > ul {
+.flex-container2 > ul {
   width: 30%;
 }
 
@@ -346,7 +346,6 @@ footer > div > img {
 
 /* Break Points */
 /* Iteration 2 | Small Screen (961px > width > 767px) */
-/* Media query will be invoked when resolutions is smaller than 962px and bigger than 766*/
 
  @media screen and (min-width: 768px) { 
  
@@ -475,7 +474,7 @@ footer > div > img {
       width: 25vw;
     } 
 
-    .flex-containerr2 {
+    .flex-container2 {
       display: flex;
       flex-wrap: wrap;
       width: 100vw;
@@ -486,7 +485,7 @@ footer > div > img {
       justify-content: space-evenly;
     }
     
-    .flex-containerr2 > ul {
+    .flex-container2 > ul {
       width: 12%;
     }
 
@@ -509,7 +508,6 @@ footer > div > img {
 }
 
 /* Iteration 3 | Medium Screen (1024px > width > 960px) */
-/* Media query will be invoked when resolutions is smaller than 962px and bigger than 766*/
 @media screen and (min-width: 961px){
   
   .flex-container-sub2 img{
@@ -547,7 +545,7 @@ footer > div > img {
   } 
 }
 
-/* Iteration 4 | Largue Screen */
+/* Iteration 4 | Large Screen (width > 1200px) */
 @media screen and (min-width: 1201px){
 
   .flex-container-col{
